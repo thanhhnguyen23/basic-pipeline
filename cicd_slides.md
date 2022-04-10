@@ -35,12 +35,26 @@ https://www.jenkins.io/
 
 # Jenkins Setup on Linux
 ```markdown
-$ apt install docker -y # install dependencies (jenkins/docker)
-$ docker pull jenkins/jenkins:lts-jdk11
-$ docker run -p 8080:8080  jenkin/jenkins:lts-jdk11
-$ docker run -p 8080:8080 -p 5000:5000 jenkins/jenkins:lts-jdk11
 
+$ apt install docker -y # install docker 
+
+$ docker pull jenkins/jenkins:lts-jdk11 # pull docker jenkins image
+
+$ docker run -p 8080:8080  jenkin/jenkins:lts-jdk11 # run latest jenkins image via docker
+
+$ docker run -p 8080:8080 -p 5000:5000 jenkins/jenkins:lts-jdk11 # launch jenkins via docker
 ```
+---
+
+# jenkins configurations in a container (via docker)
+$ docker run -p 8080:8080 -p 5000:5000 jenkins/jenkins:lts-jdk11 # launch jenkins via docker
+
+## 01 here
+## 02 here
+## 03 here
+## 04 here
+## 05 here
+## 06 here
 
 ---
 
